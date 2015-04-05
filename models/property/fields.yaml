@@ -1,0 +1,185 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: Title
+        span: left
+        placeholder: Property title text
+
+    slug:
+        label: URL Key
+        span: right
+        placeholder: The URL key (or "slug")
+        preset:
+            field: title
+            type: slug
+
+    toolbar:
+        type: partial
+        path: post_toolbar
+        cssClass: collapse-visible
+
+# tabs:
+#   fields:
+
+#     excerpt:
+#       tab: Details
+#       label: Excerpt
+#       type: textarea
+#       size: small
+
+secondaryTabs:
+    stretch: true
+    fields:
+        content:
+            tab: Edit
+            stretch: true
+            span: left
+            cssClass: field-slim
+            type: codeeditor
+            language: html
+            showGutter: false
+            wrapWords: true
+            fontSize: 13
+            margin: 15
+
+        preview:
+            type: ctmh\PropertyManager\FormWidgets\Preview
+            tab: Edit
+            stretch: true
+            span: right
+            cssClass: field-slim
+            
+        intro:
+            tab: Details
+            label: Intro
+            type: textarea
+            size: small
+            
+        location:
+            tab: Details
+            label: Location
+            type: text
+            
+        postcode:
+            tab: Details
+            label: Postcode / zip code
+            type: text
+        
+        type:
+            tab: Details
+            label: Type
+            type: dropdown
+            options:
+                rent: Rent
+                buy: Buy
+            
+        price:
+            tab: Details
+            label: Price
+            type: number
+        
+        bedrooms:
+            tab: Details
+            label: Bedrooms
+            type: text
+            
+        receptions:
+            tab: Details
+            label: Receptions / living areas
+            type: text
+            
+        bathrooms:
+            tab: Details
+            label: Bathrooms
+            type: text
+            
+        latitude:
+            tab: Details
+            label: Latitude
+            type: text
+            
+        longitude:
+            tab: Details
+            label: Longitude
+            type: text
+            
+        map_placeholder:
+            tab: Details
+            label: Map (click to place pin)
+            type: text
+
+        published:
+            tab: Manage
+            label: Published
+            span: left
+            type: checkbox
+
+        published_at:
+            tab: Manage
+            label: Published at
+            span: left
+            cssClass: checkbox-align
+            type: datepicker
+            mode: date
+            
+        sold:
+            tab: Manage
+            label: Sold
+            span: left
+            type: checkbox
+
+        # visibility:
+        #   tab: Manage
+        #   label: Visibility
+        #   type: balloon-selector
+        #   options:
+        #     - Public
+        #     - Sticky
+        #     - Private
+
+        # status:
+        #   tab: Manage
+        #   label: Status
+        #   type: balloon-selector
+        #   options:
+        #     - Draft
+        #     - Review
+        #     - Published
+        
+        thumbnail_image:
+            tab: Manage
+            label: Thumbnail image
+            type: fileupload
+            mode: image
+            imageWidth: 200
+            imageHeight: 200
+
+        featured_images:
+            tab: Manage
+            label: Property images
+            type: fileupload
+            mode: image
+            imageWidth: 200
+            imageHeight: 200
+        
+        brochure:
+            tab: Manage
+            label: Property brochure
+            type: fileupload
+            mode: file
+            
+        epc:
+            tab: Manage
+            label: Property EPC
+            type: fileupload
+            mode: file
+            
+        floorplan:
+            tab: Manage
+            label: Property floorplan
+            type: fileupload
+            mode: file

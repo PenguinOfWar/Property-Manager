@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Property
+form: ~/plugins/ctmh/propertymanager/models/property/fields.yaml
+modelClass: ctmh\PropertyManager\Models\Property
+defaultRedirect: ctmh/propertymanager/properties
+
+create:
+    redirect: ctmh/propertymanager/properties/update/:id
+    redirectClose: ctmh/propertymanager/properties
+
+update:
+    redirect: rainlab/blog/posts
+    redirectClose: ctmh/propertymanager/properties

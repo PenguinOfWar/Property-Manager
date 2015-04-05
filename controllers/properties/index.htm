@@ -1,0 +1,13 @@
+<div class="scoreboard">
+    <div data-control="toolbar">
+        <div class="scoreboard-item control-chart" data-control="chart-pie">
+            <ul>
+                <li data-color="#95b753"> Published <span><?= $propertiesPublished ?></span></li>
+                <li data-color="#e5a91a"> Drafts <span><?= $propertiesDrafts ?></span></li>
+                <li data-color="#cccccc"> Total <span><?= $propertiesTotal ?></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<?= $this->listRender() ?>

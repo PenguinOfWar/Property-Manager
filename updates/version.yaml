@@ -1,0 +1,17 @@
+1.0.0:
+  - First version of Property Manager
+  - Create properties table
+  - create_properties_table.php
+1.0.1:
+  - Adding price to properties
+  - Adding Google maps API key to settings
+  - create_properties_price.php
+1.0.2:
+  - Adding content html to properties
+  - create_properties_content_html.php
+1.0.3:
+  - Fixing float properties for lat lng
+  - create_properties_change_latlng_float.php
+1.0.4:
+  - Adding additional fields to properties table
+  - create_properties_additional_fields.php

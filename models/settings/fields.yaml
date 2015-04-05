@@ -1,0 +1,13 @@
+fields:
+  currency:
+    label: Currency
+    span: left
+    commentAbove: Currency symbol that is displayed on the frontend (e.g. £, $, §)
+  maps_api_key:
+    label: Google Maps v3 API key
+    span: left
+    commentAbove: Get an API Key from your Google Code account page (https://code.google.com/apis/console)
+  geocode_api_key:
+    label: Google Geocoder API key
+    span: left
+    commentAbove: Get an API Key from your Google Code account page (https://code.google.com/apis/console)
