@@ -21,12 +21,12 @@ class Plugin extends PluginBase
         ];
     }
 
-    /*public function registerComponents()
+    public function registerComponents()
     {
         return [
-            '\ctmh\PropertyManager\Components\Signup' => 'mailSignup'
+            '\ctmh\PropertyManager\Components\ListProperties' => 'ListProperties'
         ];
-    }*/
+    }
     
     /* register permissions */
 

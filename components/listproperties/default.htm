@@ -1,0 +1,9 @@
+<ul>
+
+{% for property in properties %}
+	<li>{{ property.title }} - {{ loop.index0 }}</li>
+{% else %}
+    <li class="no-data">{{ noPropertiesMessage }}</li>
+{% endfor %}
+
+</ul>
